@@ -1,16 +1,20 @@
 package com.example.bleadvertiser3
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import com.bumptech.glide.Glide
+import com.google.android.gms.auth.api.signin.GoogleSignInClient
+import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_dashboard.*
 import kotlinx.android.synthetic.main.activity_main.*
 
+
 class DashboardActivity : AppCompatActivity() {
 
     private lateinit var mAuth: FirebaseAuth
+    private lateinit var mGoogleSignInClient: GoogleSignInClient
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,8 +27,15 @@ class DashboardActivity : AppCompatActivity() {
         textView2.text = currentUser?.displayName
         textView3.text = currentUser?.email
 
+        Glide.with(this).load(currentUser?.photoUrl).into(profile_imageView)
+
         sign_out_button.setOnClickListener{
+            //Firebase Sign out
             mAuth.signOut()
+
+            //Google Sign out
+            //mGoogleSignInClient.signOut()
+
             val intent = Intent(this, SignInActivity::class.java)
             startActivity(intent)
             finish()
