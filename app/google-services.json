@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "609845064261",
+    "project_id": "my-project-1612527006479",
+    "storage_bucket": "my-project-1612527006479.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:609845064261:android:c2b9e3c461d6d59ae2a92c",
+        "android_client_info": {
+          "package_name": "com.example.bleadvertiser3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "609845064261-43cmrae9hp5kpl0kk0ub5ssngparks81.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBliphX3wGfq8IJfvgL1O48_pG3bDh1sJI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "609845064261-43cmrae9hp5kpl0kk0ub5ssngparks81.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
