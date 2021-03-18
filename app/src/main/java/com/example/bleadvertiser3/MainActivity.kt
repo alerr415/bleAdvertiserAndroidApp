@@ -31,6 +31,6 @@ class MainActivity : AppCompatActivity() {
                 startActivity(signInIntent)
                 finish()
             }
-        }, 2000)
+        }, 1)
     }
 }
