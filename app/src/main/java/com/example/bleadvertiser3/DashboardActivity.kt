@@ -91,7 +91,7 @@ class DashboardActivity : AppCompatActivity() {
         //val pUuid = ParcelUuid(UUID.fromString(getString(R.string.ble_uuid)))   //using string from strings.xml
         val pUuid = ParcelUuid(UUID.randomUUID())
         val id = mAuth.uid
-        val idSubstring1 = id?.substring(0,5)
+        val idSubstring1 = id?.substring(0,5)  //substring: Returns the substring of this string starting at the startIndex and ending right before the endIndex.
         val data = AdvertiseData.Builder()
                 .setIncludeDeviceName(false)
                 //.addServiceUuid(pUuid)
