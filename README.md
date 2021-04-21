@@ -1,3 +1,5 @@
+BLE advertiser android app coded in Kotlin
+
 "# bleAdvertiserAndroidApp" 
 Testing if ble stops:
 -pressing sign out button: yes
