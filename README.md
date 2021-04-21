@@ -1,5 +1,7 @@
 BLE advertiser android app coded in Kotlin
 
+You can download it, sign in with Google and it starts advertising.
+
 Testing if ble stops:
 -pressing sign out button: yes
 -pressing switch to off: yes
